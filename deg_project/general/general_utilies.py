@@ -92,14 +92,14 @@ def evalute_pearson_and_RMSE_all_8_points_models(saved_models_path_list, model_t
 
 
 ###############################lock using lock file######################################
-import fcntl
-
-def acquireLock():
-    ''' acquire exclusive lock file access '''
-    locked_file_descriptor = open('lockfile.LOCK', 'w+')
-    fcntl.lockf(locked_file_descriptor, fcntl.LOCK_EX)
-    return locked_file_descriptor
-
-def releaseLock(locked_file_descriptor):
-    ''' release exclusive lock file access '''
-    locked_file_descriptor.close()
+# import fcntl
+#
+# def acquireLock():
+#     ''' acquire exclusive lock file access '''
+#     locked_file_descriptor = open('lockfile.LOCK', 'w+')
+#     fcntl.lockf(locked_file_descriptor, fcntl.LOCK_EX)
+#     return locked_file_descriptor
+#
+# def releaseLock(locked_file_descriptor):
+#     ''' release exclusive lock file access '''
+#     locked_file_descriptor.close()
