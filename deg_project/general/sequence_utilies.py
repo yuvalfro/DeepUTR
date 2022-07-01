@@ -67,13 +67,14 @@ def create_DNA_logo (PWM_df, secondary_color=False, figsize=(10, 2.5), labelpad=
 
     IG_logo.style_spines(visible=False)
     IG_logo.style_spines(spines=['left', 'bottom'], visible=True)
-    IG_logo.style_xticks(rotation=90, fmt='%d', anchor=0)
+    IG_logo.style_xticks(rotation=0, fmt='%d', anchor=0, spacing=5)
 
     # style using Axes methods
     IG_logo.ax.set_ylabel("IG", labelpad=labelpad)
     #IG_logo.ax.set_xlabel(string)
     IG_logo.ax.xaxis.set_ticks_position('none')
-    IG_logo.ax.xaxis.set_tick_params('both')
-    IG_logo.ax.set_xticklabels([])
+    #IG_logo.ax.xaxis.set_tick_params('both')
+    #IG_logo.ax.set_xticklabels([])
+    #IG_logo.ax.xaxis.set_tick_params(pad=-1)
 
     return IG_logo
