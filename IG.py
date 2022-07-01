@@ -9,10 +9,10 @@ from deg_project.NN import NN_utilies, NN_load_datasets
 from PyPDF3 import PdfFileWriter, PdfFileReader
 from PyPDF3.pdf import PageObject
 
-model_path_110_4 = "C:\\Users\\YuvalFroman\\PycharmProjects\\DeepUTR/files/saved_models_8_disjoint/ensemble/dynamics_-_CNN\\A_minus_model_8_points_model_8_points_id_1___20201127-005706.h5"
-model_path_110_5 = "C:\\Users\\YuvalFroman\\PycharmProjects\\DeepUTR/files/saved_model_new_input/ensemble/dynamics_-_CNN\\dynamics_-_model_8_points_id_1___20220402-081403.h5"
-initial_value_path = "C:\\Users\\YuvalFroman\\PycharmProjects\\DeepUTR\\files\\dataset\\validation_A_minus_normalized_levels.csv"
-seq_path = "C:\\Users\\YuvalFroman\\PycharmProjects\\DeepUTR\\files\\dataset\\validation_seq.csv"
+model_path_110_4 = "..DeepUTR/files/saved_models_8_disjoint/ensemble/dynamics_-_CNN/A_minus_model_8_points_model_8_points_id_1___20201127-005706.h5"
+model_path_110_5 = "..DeepUTR/files/saved_model_new_input/ensemble/dynamics_-_CNN/dynamics_-_model_8_points_id_1___20220402-081403.h5"
+initial_value_path = "..DeepUTR/files/dataset/validation_A_minus_normalized_levels.csv"
+seq_path = "..DeepUTR/files/dataset/validation_seq.csv"
 output_pdf_name1 = "result_IG - lunps in const.pdf"
 output_pdf_name2 = "result_IG - one hot in const.pdf"
 model_type = 'dynamics'
